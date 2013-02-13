@@ -2,14 +2,14 @@
 /* Styles to prettify the quiz page */
 
 html {
-    background: #eee;
+    background: #fff;
+    border-top: 6px solid #222;
 }
 
 body {
     width: 800px;
+    height: 500px;
     margin: 0 auto;
-    border: 2px solid #ccc;
-    border-top: none;
     background: #fff;
     padding: 20px;
     font-family: Trebuchet, Arial,Helvetica,sans-serif;
@@ -103,9 +103,18 @@ ol.questions li {
     margin-left: 0;
 }
 
+/*.question {
+    height: 200px;
+}*/
+
+.question .answers,
+.question .responses {
+    height: 200px;
+}
+
 ul.answers {
     margin-left: 20px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
 
 ul.responses li {
@@ -121,14 +130,23 @@ ul.responses li.correct p span {
 }ul.responses li.incorrect p span {
     color: #B5121B;
 }
-
-.quizResults h3 {
-    margin: 0;
-}
-.quizResults h3 span {
-    font-weight: normal;
-    font-style: italic;
-}
-.quizResultsCopy {
-    margin-top: 20px;
-}
+.quizResults {}
+    .quizResults h3 {
+        margin: 0;
+    }
+    .quizResults h3 span {
+        font-weight: normal;
+        font-style: italic;
+    }
+    .quizLevel {
+        padding: 0.5em;
+        border-radius: 8px;
+    }
+    .quizResults .level3,
+    .quizResults .level4,
+    .quizResults .level5 {
+        background: #ff8486;        
+    }
+    .quizResultsCopy {
+        margin-top: 20px;
+    }
