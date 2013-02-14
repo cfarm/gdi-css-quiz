@@ -9,30 +9,37 @@
         <link href="css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
         <link href="css/master.css" media="screen" rel="stylesheet" type="text/css">
     </head>
+    <body>
+        <div id="slickQuiz" role="main">
+            <h1 class="quizName"><!-- where the quiz name goes --></h1>
 
-    <body id="slickQuiz">
-        <h1 class="quizName"><!-- where the quiz name goes --></h1>
+            <div class="quizArea">
+                <div class="quizHeader">
+                    <!-- where the quiz main copy goes -->
 
-        <div class="quizArea">
-            <div class="quizHeader">
-                <!-- where the quiz main copy goes -->
+                    <a class="button startQuiz" href="">Get Started!</a>
+                </div>
 
-                <a class="button startQuiz" href="">Get Started!</a>
+                <!-- where the quiz gets built -->
             </div>
 
-            <!-- where the quiz gets built -->
-        </div>
+            <div class="quizResults">
+                <h3 class="quizScore">You Scored: <span><!-- where the quiz score goes --></span></h3>
 
-        <div class="quizResults">
-            <h3 class="quizScore">You Scored: <span><!-- where the quiz score goes --></span></h3>
+                <h3 class="quizLevel"><strong>Your Result:</strong> <span><!-- where the quiz ranking level goes --></span></h3>
 
-            <h3 class="quizLevel"><strong>Your Result:</strong> <span><!-- where the quiz ranking level goes --></span></h3>
-
-            <div class="quizResultsCopy">
-                <!-- where the quiz result copy goes -->
+                <div class="quizResultsCopy">
+                    <!-- where the quiz result copy goes -->
+                </div>
             </div>
         </div>
-
+            <footer>
+                <nav>
+                    <a href="http://girldevelopit.com/chapters/philadelphia" title="Girl Develop It Philadelphia">Girl Develop It Philly</a>
+                    <a href="http://www.meetup.com/Girl-Develop-It-Philadelphia/events/103820282/" title="Intro to Sass Signup">Sign up for Intro to Sass</a>
+                    <a href="mailto:philly@girldevelopit.com" title="Contact Us">Contact Us</a>
+                </nav>
+            </footer>
         <script src="js/jquery-1.7.min.js"></script>
         <script src="js/slickQuiz-config.js"></script>
         <script src="js/slickQuiz.js"></script>
