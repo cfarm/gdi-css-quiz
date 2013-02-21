@@ -27,18 +27,22 @@ footer {
     height: 50px;
     background: #222;
 }
-    footer nav a {
-        display: inline-block;
-        margin: 8px 2px;
-        padding: 5px 8px;
-        background: #3d3d3d;
-        border-radius: 4px;
-        text-decoration: none;
+    footer nav {
+        margin: 0 auto;
+        width: 800px;
     }
-    footer nav a:hover {
-        color: #222;
-        background: #fff;
-    }
+        footer nav a {
+            display: inline-block;
+            margin: 8px 2px;
+            padding: 5px 8px;
+            background: #3d3d3d;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        footer nav a:hover {
+            color: #222;
+            background: #fff;
+        }
 
 a {
     color: #01a9b4;
@@ -171,11 +175,34 @@ ul.responses li.correct p span {
         padding: 0.5em;
         border-radius: 8px;
     }
+    .quizResults .level1,
+    .quizResults .level2 {
+        background: #a8d683;
+    }
     .quizResults .level3,
     .quizResults .level4,
     .quizResults .level5 {
         background: #ff8486;        
     }
+    .quizResults a {
+        color: #333;
+    }
     .quizResultsCopy {
         margin-top: 20px;
     }
+
+@media screen and (max-width: 800px) {
+    #slickQuiz,
+    footer,
+    footer nav {
+        width: 99%;
+        height: auto;
+        box-sizing: border-box;
+    }
+    footer nav {
+        padding-bottom: 8px;
+    }
+        footer nav a {
+            margin-bottom: 0;
+        }
+}
