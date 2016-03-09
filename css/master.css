@@ -139,7 +139,7 @@ ol.questions li {
 
 .question .answers,
 .question .responses {
-    height: 200px;
+    min-height: 200px;
 }
 
 ul.answers {

@@ -4,92 +4,92 @@
 
 var quizJSON = {
     "info": {
-        "name":    "CSS Quiz",
-        "main":    "<p>This quiz is to evaluate your CSS knowledge for the <a target='_blank' href='http://www.meetup.com/Girl-Develop-It-Philadelphia/events/103820282/'>GDI Philly Intro to Sass class</a>.</p>",
-        "results": "<h5>More CSS Resources</h5><ul><li><a target='_blank' href='http://girldevelopit.com/materials'>Girl Develop It Course Materials</a></li><li><a target='_blank' href='https://developer.mozilla.org/en-US/docs/CSS'>Mozilla Developer Network CSS Tutorials</a></li><li><a target='_blank' href='http://css-tricks.com/'>CSS-Tricks</a> for Demos, Tips, and Code Snippets</li></ul>",
-        "level1":  "You're ready to take your CSS chops to the next level with Sass - <a target='_blank' href='http://www.meetup.com/Girl-Develop-It-Philadelphia/events/103820282/'>go sign up</a>!",
-        "level2":  "You're ready to take your CSS chops to the next level with Sass - <a target='_blank' href='http://www.meetup.com/Girl-Develop-It-Philadelphia/events/103820282/'>go sign up</a>!",
-        "level3":  "You should brush up on your CSS skills before taking them to the next level with Sass - we want you to be comfortable using CSS while learning all the new Sass-y stuff. Check out <a target='_blank' href='http://www.meetup.com/Girl-Develop-It-Philadelphia/#upcoming'>upcoming Girl Develop It classes</a> or review the <a target='_blank' href='http://girldevelopit.com/materials'>class materials</a> to beef up your skills.",
-        "level4":  "You should brush up on your CSS skills before taking them to the next level with Sass - we want you to be comfortable using CSS while learning all the new Sass-y stuff. Check out <a target='_blank' href='http://www.meetup.com/Girl-Develop-It-Philadelphia/#upcoming'>upcoming Girl Develop It classes</a> or review the <a target='_blank' href='http://girldevelopit.com/materials'>class materials</a> to beef up your skills.",
-        "level5":  "You should brush up on your CSS skills before taking them to the next level with Sass - we want you to be comfortable using CSS while learning all the new Sass-y stuff. Check out <a target='_blank' href='http://www.meetup.com/Girl-Develop-It-Philadelphia/#upcoming'>upcoming Girl Develop It classes</a> or review the <a target='_blank' href='http://girldevelopit.com/materials'>class materials</a> to beef up your skills." // no comma here
+        "name":    "JavaScript Basics Quiz",
+        "main":    "<p>This quiz is to evaluate your JavaScript basics knowledge for the <a target='_blank' href='http://www.meetup.com/Girl-Develop-It-Philadelphia/events/228782436/'>GDI Philly Intermediate JavaScript class</a>.</p>",
+        "results": "<h5>More JavaScript Resources</h5><ul><li><a target='_blank' href='http://girldevelopit.com/materials'>Girl Develop It Course Materials</a></li><li><a target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'>Mozilla Developer Network JavaScript Tutorials</a></li><li><a target='_blank' href='https://github.com/rmurphey/js-assessment'>JS Assessment</a></li></ul>",
+        "level1":  "You're ready to take your JavaScript skills to the next level with Intermediate JS - <a target='_blank' href='http://www.meetup.com/Girl-Develop-It-Philadelphia/events/228782436/'>go sign up</a>!",
+        "level2":  "You're ready to take your JavaScript skills to the next level with Intermediate JS - <a target='_blank' href='http://www.meetup.com/Girl-Develop-It-Philadelphia/events/228782436/'>go sign up</a>!",
+        "level3":  "You should brush up on your JavaScript basics before attempting to learn more advanced topics. Check out <a target='_blank' href='http://www.meetup.com/Girl-Develop-It-Philadelphia/#upcoming'>upcoming Girl Develop It classes</a> or review the <a target='_blank' href='http://cfarm.github.io/gdi-intro-js'>Intro to JavaScript class materials</a> to beef up your skills.",
+        "level4":  "You should brush up on your JavaScript basics before attempting to learn more advanced topics. Check out <a target='_blank' href='http://www.meetup.com/Girl-Develop-It-Philadelphia/#upcoming'>upcoming Girl Develop It classes</a> or review the <a target='_blank' href='http://cfarm.github.io/gdi-intro-js'>Intro to JavaScript class materials</a> to beef up your skills.",
+        "level5":  "You should brush up on your JavaScript basics before attempting to learn more advanced topics. Check out <a target='_blank' href='http://www.meetup.com/Girl-Develop-It-Philadelphia/#upcoming'>upcoming Girl Develop It classes</a> or review the <a target='_blank' href='http://cfarm.github.io/gdi-intro-js'>Intro to JavaScript class materials</a> to beef up your skills." // no comma here
     },
     "questions": [
         { // Question 1
-            "q": "CSS is used to...",
+            "q": "JavaScript is often used to...",
             "a": [
-                {"option": "lend structure to the document",      "correct": false},
-                {"option": "script the interactions on the page",     "correct": false},
-                {"option": "style the presentation of the document",      "correct": true},
-                {"option": "update content in the document ",     "correct": false} // no comma here
+                {"option": "lend structure to a website",      "correct": false},
+                {"option": "respond to a user's interactions on the page",     "correct": true},
+                {"option": "style the presentation of a webpage",      "correct": true},
+                {"option": "update content in a webpage ",     "correct": true} // no comma here
             ],
-            "correct": "<p><span>You got it-</span> Cascading Style Sheets control the presentation of a webpage.</p>",
-            "incorrect": "<p><span>Incorrect.</span> <a target='_blank' href='https://developer.mozilla.org/en-US/docs/CSS'>Learn more about the role of Cascading Style Sheets in web documents</a>.</p>" // no comma here
+            "correct": "<p><span>You got it-</span> JavaScript can be used to respond to user's input, add styles to your page, and even load content and HTML.</p>",
+            "incorrect": "<p><span>Incorrect.</span> <a target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction#What_is_JavaScript'>Learn more about the role of JavaScript in web documents</a>.</p>" // no comma here
         },
         { // Question 2
-            "q": "What is the total width of this container when accounting for the box model? <br>#container {width: 100px; padding: 20px 10px;}",
+            "q": "Which of the following is not a valid variable declaration in Javascript?",
             "a": [
-                {"option": "110",    "correct": false},
-                {"option": "120",     "correct": true},
-                {"option": "100",      "correct": false},
-                {"option": "140",   "correct": false} // no comma here
+                {"option": "var $kittens = 5;",    "correct": false},
+                {"option": "var kittens = 5;",     "correct": false},
+                {"option": "var kittens = undefined",      "correct": false},
+                {"option": "var 5kittens = 5;",   "correct": true} // no comma here
             ],
-            "correct": "<p><span>You got it!</span> 100 pixels wide + 10 pixels of padding on each side = 120 pixels total width.</p>",
-            "incorrect": "<p><span>Incorrect.</span> 100 pixels wide + 10 pixels of padding on each side = 120 pixels total width. <a target='_blank' href='https://developer.mozilla.org/en-US/docs/CSS/box_model'>Review the box model</a>.</p>" // no comma here
+            "correct": "<p><span>You got it!</span> Variable names cannot start with numbers.</p>",
+            "incorrect": "<p><span>Incorrect.</span> Variable names need to start with a letter, $, or _. Variable names can only be made of letters, numbers, $, or _. And variable values can be special values like undefined or null. <a target='_blank' href='http://cfarm.github.io/gdi-intro-js/class1.html#/13'>Review variable naming and values</a>.</p>" // no comma here
         },
         { // Question 3
-            "q": "Which of the following is used to display links <strong>without</strong> an underline?",
+            "q": "Which of the following arithmetic operations finds the remainder of a divided by b?",
             "a": [
-                {"option": "{ text-decoration: no-underline; }",        "correct": false},
-                {"option": "{ text-decoration: underline; }",           "correct": false},
-                {"option": "{ text-decoration: 0; }",  "correct": false},
-                {"option": "{ text-decoration: none; }",   "correct": true} // no comma here
+                {"option": "a - b",        "correct": false},
+                {"option": "a / b",           "correct": false},
+                {"option": "a * b",  "correct": false},
+                {"option": "a % b",   "correct": true} // no comma here
             ],
-            "correct": "<p><span>Yup, you got it.</span></p>",
-            "incorrect": "<p><span>Incorrect.</span> Check out this <a target='_blank' href='https://developer.mozilla.org/en-US/docs/CSS/text-decoration'>text-decoration documentation</a> to learn more.</p>" // no comma here
+            "correct": "<p><span>Yup, you nailed it. The modulus operator gives the remainder. Check out this list of <a target='_blank' href='http://cfarm.github.io/gdi-intro-js/class1.html#/20'>arithmetic operators</a> to learn more. </span></p>",
+            "incorrect": "<p><span>Incorrect.</span> Check out this list of <a target='_blank' href='http://cfarm.github.io/gdi-intro-js/class1.html#/20'>arithmetic operators</a> to learn more.</p>" // no comma here
         },
         { // Question 4
-            "q": "The # symbol specifies that the selector is...",
+            "q": "Which function will print the name 'Maru the cat' to the console, given an argument of 'Maru'?",
             "a": [
-                {"option": "a class",        "correct": false},
-                {"option": "an element",           "correct": false},
-                {"option": "a tag",  "correct": false},
-                {"option": "an ID",   "correct": true} // no comma here
+                {"option": "function printName(catName) { console.log(catName + ' the cat'); }",        "correct": true},
+                {"option": "function printName(catName) { return 'Maru the cat'; }",           "correct": false},
+                {"option": "function printName(catName) { var message = catName + ' the cat'); console.log(message) }",  "correct": true},
+                {"option": "function printName(catName) { console.print(catName + ' the cat'); }",   "correct": false} // no comma here
             ],
-            "correct": "<p><span>Correct!</span> You know the difference between a class and an ID.</p>",
-            "incorrect": "<p><span>Incorrect.</span> Check out this <a target='_blank' href='https://developer.mozilla.org/en-US/docs/CSS/Getting_Started/Selectors'>CSS selector documentation</a> to review.</p>" // no comma here
+            "correct": "<p><span>Correct!</span> Both functions will print the message 'Maru the cat' to the console when called with an input of 'Maru.'</p>",
+            "incorrect": "<p><span>Incorrect.</span> Check out this <a target='_blank' href='http://cfarm.github.io/gdi-intro-js/class1.html#/26'>lesson about JavaScript functions</a> to review.</p>" // no comma here
         },
         { // Question 5
-            "q": "What is the right margin value in the follow style? <br>#id {margin: 20px 30px 10px 50px; }",
+            "q": "What's the return value from this function when inputting the number 100 for the 'total' argument? <span style='font-weight: normal'><br>function calculateTip(total) {<br>&nbsp;&nbsp;&nbsp;&nbsp;var tipPercent = 0.20; <br>&nbsp;&nbsp;&nbsp;&nbsp;return (total * tipPercent);<br>}</span>",
             "a": [
-                {"option": "20px",        "correct": false},
-                {"option": "30px",           "correct": true},
-                {"option": "10px",  "correct": false},
-                {"option": "50px",   "correct": false} // no comma here
+                {"option": "200",        "correct": false},
+                {"option": "20",           "correct": true},
+                {"option": "10",  "correct": false},
+                {"option": "50",   "correct": false} // no comma here
             ],
-            "correct": "<p><span>Good Job!</span> You know your CSS shorthand values!</p>",
-            "incorrect": "<p><span>Incorrect.</span> Read up on <a target='_blank' href='https://developer.mozilla.org/en-US/docs/CSS/Shorthand_properties#Margin_and_Padding_Properties'>CSS shorthand for the margin property</a>.</p>" // no comma here
+            "correct": "<p><span>Good Job!</span> You know your function syntax and math operators!</p>",
+            "incorrect": "<p><span>Incorrect.</span> Check out this <a target='_blank' href='http://cfarm.github.io/gdi-intro-js/class1.html#/26'>lesson about JavaScript functions</a> to review.</p>" // no comma here
         },
         { // Question 6
-            "q": "Which of the following are features of CSS3? (Choose all that apply)",
+            "q": "What message will be printed to the console? <br><span style='font-weight: normal'>var awesomeGroup = 'GDI Philly';<br>function whatIsAwesome() {<br>&nbsp;&nbsp;&nbsp;&nbsp;var awesomeGroup = 'Girl Develop It';<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log (awesomeGroup + ' is pretty awesome.');<br>}<br>whatIsAwesome();</span>",
             "a": [
-                {"option": "CSS gradients",        "correct": true},
-                {"option": "box-sizing",           "correct": true},
-                {"option": "media queries",  "correct": true},
-                {"option": "background images",   "correct": false} // no comma here
+                {"option": "Girl Develop It is pretty awesome.",        "correct": true},
+                {"option": "GDI Philly is pretty awesome.",           "correct": false},
+                {"option": "GDI is pretty awesome.",           "correct": false},
+                {"option": "awesomeGroup is pretty awesome.",  "correct": false} // no comma here
             ],
-            "correct": "<p><span>Right on!</span> Those are all part of the CSS3 spec.</p>",
-            "incorrect": "<p><span>Incorrect.</span> Review the features of CSS3 on the <a target='_blank' href='https://developer.mozilla.org/en-US/docs/tag/CSS3'>Mozilla Developer Network</a>.</p>" // no comma here
+            "correct": "<p><span>Right on!</span> You remember the difference between local and global scope.</p>",
+            "incorrect": "<p><span>Incorrect.</span> <a target='_blank' href='http://cfarm.github.io/gdi-intro-js/class2.html#/2'>Review how local and global variable scope works</a>.</p>" // no comma here
         },
         { // Question 7
-            "q": "Which of the following CSS selectors has the most <a target='_blank' href='https://developer.mozilla.org/en-US/docs/CSS/Specificity'>specificity</a>?",
+            "q": "Which of the following will trigger an infinite loop and crash your browser if you run it?",
             "a": [
-                {"option": "p.description a",        "correct": true},
-                {"option": "p",           "correct": false},
-                {"option": "p a",  "correct": false},
-                {"option": ".description a",   "correct": false} // no comma here
+                {"option": "var bottlesOfBeer = 99;<br>while (bottlesOfBeer >= 1) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log (bottlesOfBeer + ' bottles of beer on the wall');<br>&nbsp;&nbsp;&nbsp;&nbsp;bottlesOfBeer = bottlesOfBeer;<br>}",        "correct": true},
+                {"option": "var bottlesOfBeer = 99;<br>while (bottlesOfBeer >= 1) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log (bottlesOfBeer + ' bottles of beer on the wall');<br>&nbsp;&nbsp;&nbsp;&nbsp;bottlesOfBeer = bottlesOfBeer - 1;<br>}",        "correct": false},
+                {"option": "var bottlesOfBeer = 99;<br>while (bottlesOfBeer >= 1) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log (bottlesOfBeer + ' bottles of beer on the wall');<br>&nbsp;&nbsp;&nbsp;&nbsp;bottlesOfBeer = bottlesOfBeer + 1;<br>}",        "correct": true},
+                {"option": "var bottlesOfBeer = 99;<br>while (bottlesOfBeer >= 1) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log (bottlesOfBeer + ' bottles of beer on the wall');<br>&nbsp;&nbsp;&nbsp;&nbsp;bottlesOfBeer = bottlesOfBeer - 9;<br>}",        "correct": false} // no comma here
             ],
-            "correct": "<p><span>Correct!</span> p.description a is the most <a target='_blank' href='https://developer.mozilla.org/en-US/docs/CSS/Specificity'>specific</a> selector.</p>",
-            "incorrect": "<p><span>Incorrect.</span> You should read up on <a target='_blank' href='https://developer.mozilla.org/en-US/docs/CSS/Specificity'>CSS specificity</a> for more info</p>" // no comma here
+            "correct": "<p><span>Good Job!</span> Both while loops will trigger an infinite loop. The first will never change the value of bottlesOfBeer, and the second will increment the value by 1, so that it's always greater than or equal to the number 1.</p>",
+            "incorrect": "<p><span>Incorrect.</span> Answers A and C will trigger an infinite loop. Option A will never change the value of bottlesOfBeer, and Answer C will increment the value by 1, so that it's always greater than or equal to the number 1. You should read up on <a target='_blank' href='http://cfarm.github.io/gdi-intro-js/class2.html#/16'>while loops</a> for more info</p>" // no comma here
         },
         { // Question 8
             "q": "Which of the following properties is used to set the stacking order of elements on a page (e.g., it makes an element overlap other elements)?",
