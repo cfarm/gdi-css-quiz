@@ -81,48 +81,48 @@ var quizJSON = {
             "incorrect": "<p><span>Incorrect.</span> <a target='_blank' href='http://cfarm.github.io/gdi-intro-js/class2.html#/2'>Review how local and global variable scope works</a>.</p>" // no comma here
         },
         { // Question 7
-            "q": "Which of the following will trigger an infinite loop and crash your browser if you run it?",
+            "q": "Which color will be logged to the console?<br><span style='font-weight:normal'>var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];<br>for (var i = 0; i < rainbowColors.length; i++) {<br>&nbsp;&nbsp;if (i === 3) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(rainbowColors[i];<br>&nbsp;&nbsp;}<br>}</span>",
             "a": [
-                {"option": "var bottlesOfBeer = 99;<br>while (bottlesOfBeer >= 1) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log (bottlesOfBeer + ' bottles of beer on the wall');<br>&nbsp;&nbsp;&nbsp;&nbsp;bottlesOfBeer = bottlesOfBeer;<br>}",        "correct": true},
-                {"option": "var bottlesOfBeer = 99;<br>while (bottlesOfBeer >= 1) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log (bottlesOfBeer + ' bottles of beer on the wall');<br>&nbsp;&nbsp;&nbsp;&nbsp;bottlesOfBeer = bottlesOfBeer - 1;<br>}",        "correct": false},
-                {"option": "var bottlesOfBeer = 99;<br>while (bottlesOfBeer >= 1) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log (bottlesOfBeer + ' bottles of beer on the wall');<br>&nbsp;&nbsp;&nbsp;&nbsp;bottlesOfBeer = bottlesOfBeer + 1;<br>}",        "correct": true},
-                {"option": "var bottlesOfBeer = 99;<br>while (bottlesOfBeer >= 1) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log (bottlesOfBeer + ' bottles of beer on the wall');<br>&nbsp;&nbsp;&nbsp;&nbsp;bottlesOfBeer = bottlesOfBeer - 9;<br>}",        "correct": false} // no comma here
+                {"option": "Red", "correct": false},
+                {"option": "Orange", "correct": false},
+                {"option": "Yellow", "correct": false},
+                {"option": "Green", "correct": true} // no comma here
             ],
-            "correct": "<p><span>Good Job!</span> Both while loops will trigger an infinite loop. The first will never change the value of bottlesOfBeer, and the second will increment the value by 1, so that it's always greater than or equal to the number 1.</p>",
-            "incorrect": "<p><span>Incorrect.</span> Answers A and C will trigger an infinite loop. Option A will never change the value of bottlesOfBeer, and Answer C will increment the value by 1, so that it's always greater than or equal to the number 1. You should read up on <a target='_blank' href='http://cfarm.github.io/gdi-intro-js/class2.html#/16'>while loops</a> for more info</p>" // no comma here
+            "correct": "<p><span>Good Job!</span> The string 'Green' is at position 3 inside the rainbowColors array, and will be printed to the console.</p>",
+            "incorrect": "<p><span>Incorrect.</span> The string 'Green' is at position 3 inside the rainbowColors array, and will be printed to the console. Remember that in JavaScript, array positions start counting at 0 - so the first element is the 0 index, the second is 1, and so on.</p>" // no comma here
         },
         { // Question 8
-            "q": "Which of the following properties is used to set the stacking order of elements on a page (e.g., it makes an element overlap other elements)?",
+            "q": "Which of the following statements will set the 'age' property of the myKitten object to equal the number 3?<br><span style='font-weight: normal;'>var myKitten = {<br>&nbsp;&nbsp;&nbsp;&nbsp;age: 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;name: 'Fluffy',<br>&nbsp;&nbsp;&nbsp;&nbsp;furColor: 'orange'<br>}</span>",
             "a": [
-                {"option": "margin",        "correct": false},
-                {"option": "display",           "correct": false},
-                {"option": "position",  "correct": false},
-                {"option": "z-index",   "correct": true} // no comma here
+                {"option": "myKitten.age = '3';",        "correct": false},
+                {"option": "myKitten.age = 3;",           "correct": true},
+                {"option": "myKitten['age'] = 3;",  "correct": true},
+                {"option": "myKitten[age] = '3';",   "correct": false} // no comma here
             ],
-            "correct": "<p><span>Good Job!</span> You're a CSS genius.</p>",
-            "incorrect": "<p><span>Incorrect.</span> The answer is <a target='_blank' href='https://developer.mozilla.org/en-US/docs/CSS/Understanding_z-index'>z-index</a>, a tricky property to learn and use.</p>" // no comma here
+            "correct": "<p><span>Good Job!</span> You can update objects using both bracket notation and dot notation.</p>",
+            "incorrect": "<p><span>Incorrect.</span> Remember, you can update objects using both bracket notation and dot notation. <a target='_blank' href='http://cfarm.github.io/gdi-intro-js/class3.html#/2'>Review how to set and get values in objects</a>.</p>" // no comma here
         },
         { // Question 9
-            "q": "How do you center a block-level element horizontally?",
+            "q": "What does the acronym DOM stand for?",
             "a": [
-                {"option": "{ align: center; }",        "correct": false},
-                {"option": "{ float: middle; }",           "correct": false},
-                {"option": "{ margin: 50%; }",  "correct": false},
-                {"option": "{ margin: 0 auto; }",   "correct": true} // no comma here
+                {"option": "Document Orientation Model",        "correct": false},
+                {"option": "Document Object Management",           "correct": false},
+                {"option": "Document Object Model",  "correct": true},
+                {"option": "Document Object Math",   "correct": false} // no comma here
             ],
-            "correct": "<p><span>Good Job!</span> You're a centering pro.</p>",
-            "incorrect": "<p><span>Incorrect.</span> Check out the <a target='_blank' href='https://developer.mozilla.org/en-US/docs/CSS/margin#Examples'>margin property</a> to see how to center a <a target='_blank' href='https://developer.mozilla.org/en-US/docs/HTML/Block-level_elements'>block-level element</a>.</p>" // no comma here
+            "correct": "<p><span>Good Job!</span> The DOM tree represents the structure of an HTML page so we can access and manipulate elements within it with JavaScript.</p>",
+            "incorrect": "<p><span>Incorrect.</span> Learn more about the <a target='_blank' href='http://cfarm.github.io/gdi-intro-js/class3.html#/9'>DOM</a> and how it represents the structure of an HTML page so we can access and manipulate elements with JavaScript.</p>" // no comma here
         },
         { // Question 10
-            "q": "How do you center an inline element horizontally?",
+            "q": "Which type of events can be used to collect input from a user through an HTML form with Javascript?",
             "a": [
-                {"option": "{ align: center; }",        "correct": false},
-                {"option": "{ text-align: center; }",           "correct": true},
-                {"option": "{ margin: 50%; }",  "correct": false},
-                {"option": "{ margin: 0 auto; }",   "correct": false} // no comma here
+                {"option": "onload event",        "correct": false},
+                {"option": "onsave event",           "correct": false},
+                {"option": "submit event",  "correct": true},
+                {"option": "onclick event",   "correct": true} // no comma here
             ],
-            "correct": "<p><span>Yup!</span> You're the centering expert.</p>",
-            "incorrect": "<p><span>Incorrect.</span> Read up on <a target='_blank' href='https://developer.mozilla.org/en-US/docs/HTML/Inline_elements'>inline elements</a> and <a target='_blank' href='https://developer.mozilla.org/en-US/docs/CSS/text-align'>text align</a> to learn more.</p>" // no comma here
+            "correct": "<p><span>Yup!</span> You're a form events expert. Learn about even more <a target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/Events'>JavaScript events</a>.</p>",
+            "incorrect": "<p><span>Incorrect.</span> Read up on <a target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/Events'>JavaScript events</a>.</p>" // no comma here
         } // no comma here
     ]
 };
